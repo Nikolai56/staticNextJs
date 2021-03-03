@@ -10,8 +10,11 @@
     "lint": "eslint .eslintrc"
   },
   "dependencies": {
+    "@fullhuman/postcss-purgecss": "^4.0.2",
     "next": "10.0.7",
     "next-i18next": "^8.0.6",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-preset-env": "^6.7.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "sass": "^1.32.8"
