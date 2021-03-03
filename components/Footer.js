@@ -1,6 +1,6 @@
 import { useTranslation } from 'next-i18next'
-import styles from '../styles/Footer.module.css'
-import Link from "next/link";
+import styles from '../styles/Footer.module.scss'
+import Link from "next/link"
 
 export const Footer = ({ isHomePage }) => {
 
@@ -9,9 +9,12 @@ export const Footer = ({ isHomePage }) => {
   return (
     <footer className={styles.footer}>
       <div className="container">
-        {isHomePage && <p className={styles.text}>{t('home-footer')}</p>}
-        <div className="row">
-          <div className="col-md-8">
+        {isHomePage && <p className={`text-center text-md-left ${styles.text}`}>{t('home-footer')}</p>}
+        <div className="row text-center text-md-left">
+          <div className={`col-md-6 order-md-1 text-md-right ${styles.copy}`}>
+            Made with ❤ © PaulCamper GmbH
+          </div>
+          <div className="col-md-6 order-md-0">
             <Link href='/second-page'>
               {t('to-second-page')}
             </Link>
@@ -19,7 +22,6 @@ export const Footer = ({ isHomePage }) => {
               {t('to-second-page')}
             </Link>
           </div>
-          <div className="col-md-4">Made with ❤ © PaulCamper GmbH</div>
         </div>
       </div>
     </footer>

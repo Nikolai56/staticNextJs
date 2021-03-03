@@ -6,7 +6,7 @@ export const Header = ({ title }) => (
       <title>next-i18next</title>
 
       <link href='/bootstrap-reboot.min.css' rel='stylesheet' />
-      <link href='/bootstrap-grid.min.css' rel='stylesheet' />
+      <link href='/bootstrap.min.css' rel='stylesheet' />
       <link href='/fonts.css' rel='stylesheet' />
       <link href='/app.css' rel='stylesheet' />
 

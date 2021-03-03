@@ -1,0 +1,35 @@
+@import "variables";
+
+.footer {
+  background-color: #e9eeec;
+  padding: 52px 0 34px;
+
+  a {
+    font-size: 14px;
+    line-height: 20px;
+    color: $charcoal;
+    & + a {
+      margin-left: 24px;
+    }
+
+    &:hover, &:active {
+      color: $link;
+    }
+  }
+}
+
+.text {
+  max-width: 623px;
+  margin-top: -8px;
+  margin-bottom: 52px;
+  font-size: 14px;
+  line-height: 20px;
+  color: $charcoal;
+}
+
+.copy {
+  margin-bottom: 24px;
+  font-size: 14px;
+  line-height: 20px;
+  color: $charcoal;
+}
