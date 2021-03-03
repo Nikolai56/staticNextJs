@@ -18,10 +18,6 @@ module.exports = {
         domain: 'paulcamper.fr',
         defaultLocale: 'fr',
       },
-      {
-        domain: 'staticnextjs.herokuapp.com',
-        defaultLocale: 'fr',
-      },
     ],
   },
 }
