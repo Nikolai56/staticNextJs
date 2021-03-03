@@ -53,7 +53,7 @@ const Homepage = () => {
 
 export const getStaticProps = async ({ locale }) => ({
   props: {
-    ...await serverSideTranslations(locale, ['common', 'footer']),
+    ...await serverSideTranslations(process.env.DEFAULT_LOCALE || locale, ['common', 'footer']),
   },
 })
 
