@@ -11,9 +11,9 @@ export const Header = () => {
         <meta property="og:type" content="website"/>
         <meta name="description" content={t('description')}/>
         <meta name="keywords" content={t('keywords')}/>
-        <meta property="og:url" content={'url'}/>
+        <meta property="og:url" content={t('url')}/>
         <meta property="og:description" content={t('description')}/>
-        <meta property="og:image" content="image"/>
+        <meta property="og:image" content={t('image')}/>
 
         <link href='/bootstrap-reboot.min.css' rel='stylesheet'/>
         <link href='/bootstrap.min.css' rel='stylesheet'/>
