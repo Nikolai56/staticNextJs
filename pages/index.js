@@ -15,7 +15,7 @@ const Homepage = () => {
   return (
     <>
       <main>
-        <Header title={t('home-h1')}/>
+        <Header/>
         <img src="/logo-vertical.svg" alt="Paulcamper Logo" className="logo" height={123} width={112}/>
         <h1>{t('home-h1')}</h1>
         <p>{t('home-text')}</p>
@@ -44,7 +44,7 @@ const Homepage = () => {
 
 export const getStaticProps = async ({ locale }) => ({
   props: {
-    ...await serverSideTranslations(locale, ['common', 'footer']),
+    ...await serverSideTranslations(locale, ['common', 'footer', 'header']),
   },
 })
 

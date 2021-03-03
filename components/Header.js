@@ -1,30 +1,27 @@
+import { useTranslation } from 'next-i18next'
 import Head from 'next/head'
 
-export const Header = ({ title }) => (
-  <>
-    <Head>
-      <title>next-i18next</title>
+export const Header = () => {
+  const { t } = useTranslation('header')
 
-      <link href='/bootstrap-reboot.min.css' rel='stylesheet' />
-      <link href='/bootstrap.min.css' rel='stylesheet' />
-      <link href='/fonts.css' rel='stylesheet' />
-      <link href='/app.css' rel='stylesheet' />
+  return (
+    <>
+      <Head>
+        <title>{t('title')}</title>
+        <meta property="og:type" content="website"/>
+        <meta name="description" content={t('description')}/>
+        <meta name="keywords" content={t('keywords')}/>
+        <meta property="og:url" content={'url'}/>
+        <meta property="og:description" content={t('description')}/>
+        <meta property="og:image" content="image"/>
 
-      <link href='https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.9/typicons.min.css' rel='stylesheet' />
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
-    {/*<h2>*/}
-    {/*  next-i18next*/}
-    {/*  <hr />*/}
-    {/*</h2>*/}
-    {/*<h1>*/}
-    {/*  {title}*/}
-    {/*</h1>*/}
-    {/*<a*/}
-    {/*  className='github'*/}
-    {/*  href='//github.com/isaachinman/next-i18next'*/}
-    {/*>*/}
-    {/*  <i className='typcn typcn-social-github-circular' />*/}
-    {/*</a>*/}
-  </>
-)
+        <link href='/bootstrap-reboot.min.css' rel='stylesheet'/>
+        <link href='/bootstrap.min.css' rel='stylesheet'/>
+        <link href='/fonts.css' rel='stylesheet'/>
+        <link href='/app.css' rel='stylesheet'/>
+
+        <link rel="icon" href="/favicon.ico"/>
+      </Head>
+    </>
+  )
+}
