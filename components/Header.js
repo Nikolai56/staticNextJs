@@ -17,10 +17,10 @@ export const Header = ({ locale }) => {
         <meta property="og:description" content={t('description')}/>
         <meta property="og:image" content={t('image')}/>
 
-        <link href='/bootstrap-reboot.min.css' rel='stylesheet'/>
-        <link href='/bootstrap.min.css' rel='stylesheet'/>
-        <link href='/fonts.css' rel='stylesheet'/>
-        <link href='/app.css' rel='stylesheet'/>
+        <link href="/bootstrap-reboot.min.css" rel="stylesheet"/>
+        <link href="/bootstrap.min.css" rel="stylesheet"/>
+        <link href="/fonts.css" rel="stylesheet"/>
+        <link href="/app.css" rel="stylesheet"/>
 
         <link rel="icon" href="/favicon.ico"/>
       </Head>

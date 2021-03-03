@@ -1,6 +1,6 @@
 import { useTranslation } from 'next-i18next'
 import styles from '../styles/Footer.module.scss'
-import Link from "next/link"
+import Link from 'next/link'
 
 export const Footer = ({ isHomePage }) => {
 
@@ -15,10 +15,10 @@ export const Footer = ({ isHomePage }) => {
             Made with ❤ © PaulCamper GmbH
           </div>
           <div className="col-md-6 order-md-0">
-            <Link href='/second-page'>
+            <Link href="/second-page">
               {t('to-second-page')}
             </Link>
-            <Link href='/second-page'>
+            <Link href="/second-page">
               {t('to-second-page')}
             </Link>
           </div>
