@@ -1,0 +1,14 @@
+.footer {
+  background-color: #e9eeec;
+  padding: 52px 0 58px;
+}
+
+.text {
+  max-width: 623px;
+  height: 120px;
+  margin-top: -8px;
+  margin-bottom: 52px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #1d2924;
+}

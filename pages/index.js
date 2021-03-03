@@ -15,19 +15,10 @@ const Homepage = () => {
   return (
     <>
       <main>
-        <Header title={t('h1')} />
-        <h2>
-          next-i18next
-          <hr />
-        </h2>
-        <h1>{t('h1')}</h1>
-        <a
-            className='github'
-            href='//github.com/isaachinman/next-i18next'
-        >
-          <i className='typcn typcn-social-github-circular' />
-        </a>
-        <img src="/logo-vertical.svg" alt="Paulcamper Logo" className="logo" height={123} width={112} />
+        <Header title={t('home-h1')}/>
+        <img src="/logo-vertical.svg" alt="Paulcamper Logo" className="logo" height={123} width={112}/>
+        <h1>{t('home-h1')}</h1>
+        <p>{t('home-text')}</p>
         <div>
           <Link
             href='/'
@@ -46,7 +37,7 @@ const Homepage = () => {
           </Link>
         </div>
       </main>
-      <Footer />
+      <Footer isHomePage/>
     </>
   )
 }
