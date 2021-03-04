@@ -1,5 +1,6 @@
 {
   "description": "This is a non-page component that requires its own namespace",
   "home-footer": "Hire and rent out campervans with PaulCamper! PaulCamper is Europe’s largest platform for private camper sharing. Campervan owners can rent out their vehicles securely and easily via our platform to those who’ve caught the travel bug. Everybody wins: owners can share their passion for camping with others while reducing the annual costs involved in maintaining their campervan. Travellers can head off on holiday in a camper van for a fair price in just a few easy steps. With PaulCamper, campervan hire is personal, fair, simple and safe. Join the PaulCamper community now – there’s plenty of heart and soul to go around.",
-  "to-legal-notice": "Legal notice"
+  "to-legal-notice": "Legal notice",
+  "to-privacy-policy": "Privacy policy"
 }

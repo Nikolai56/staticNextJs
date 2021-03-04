@@ -15,8 +15,8 @@ export const Footer = ({ isHomePage }) => {
             Made with ❤ © PaulCamper GmbH
           </div>
           <div className="col-md-6 order-md-0">
-            <Link href="/second-page">
-              {t('to-second-page')}
+            <Link href="/docs/privacy-policy">
+              {t('to-privacy-policy')}
             </Link>
             <Link href="/docs/legal-notice">
               {t('to-legal-notice')}

@@ -1,5 +1,6 @@
 {
   "description": "Dies ist eine Nicht-Seitenkomponente, die einen eigenen Namespace erfordert",
   "home-footer": "Loue des camping-car avec PaulCamper ! PaulCamper est la plus grande plateforme d’Europe de camping-cars privés partagés. Ici, les propriétaires de camping-cars peuvent louer leur véhicule en toute sécurité à des férus de voyage. Les deux parties sont gagnantes : D’un côté, les propriétaires ont la possibilité de partager leur passion pour le camping avec d’autres personnes tout en réduisant les frais annuels de leur véhicule. De l’autre, les locataires peuvent facilement exaucer leur rêve de vacances en affrétant un camping-car pour un prix raisonnable. À la fois simple, juste, personnel et sécurisé : tel est PaulCamper. À ton tour, deviens membre de la PaulCamper Community, une communauté qui a de l’âme et du cœur.",
-  "to-legal-notice": "Mentions légales"
+  "to-legal-notice": "Mentions légales",
+  "to-privacy-policy": "Confidentialité"
 }
