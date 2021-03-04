@@ -5,21 +5,17 @@ module.exports = {
     locales: ['en', 'fr'],
     // This is the default locale you want to be used when visiting
     // a non-locale prefixed path e.g. `/hello`
-    defaultLocale: 'fr',
+    defaultLocale: 'en',
     // This is a list of locale domains and the default locale they
     // should handle (these are only required when setting up domain routing)
     // Note: subdomains must be included in the domain value to be matched e.g. "fr.example.com".
     domains: [
-      // {
-      //   domain: 'paulcamper.co.uk',
-      //   defaultLocale: 'en',
-      // },
-      // {
-      //   domain: 'paulcamper.fr',
-      //   defaultLocale: 'fr',
-      // },
       {
-        domain: 'staticnextjs.herokuapp.com',
+        domain: 'paulcamper.co.uk',
+        defaultLocale: 'en',
+      },
+      {
+        domain: 'paulcamper.fr',
         defaultLocale: 'fr',
       },
     ],

@@ -10,6 +10,9 @@
     "lint": "eslint .eslintrc"
   },
   "dependencies": {
+    "@mdx-js/loader": "^1.6.22",
+    "@mdx-js/react": "^1.6.22",
+    "@next/mdx": "^10.0.7",
     "gray-matter": "^4.0.2",
     "next": "10.0.7",
     "next-i18next": "^8.0.6",

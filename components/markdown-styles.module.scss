@@ -1,6 +1,11 @@
 .postHeader {
   background-color: #fff;
   padding: 50px 0;
+
+  h1 {
+    font-size: 4.6rem;
+    line-height: 1;
+  }
 }
 
 .body {
@@ -8,6 +13,7 @@
   line-height: 22px;
   padding-top: 50px;
   padding-bottom: 40px;
+  word-break: break-word;
 
   p {
     margin-bottom: 10px;

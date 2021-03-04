@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router'
 import ErrorPage from 'next/error'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import PostBody from '../../components/post-body'
 import { Header } from '../../components/Header'
 import PostHeader from '../../components/post-header'
@@ -20,7 +21,7 @@ export default function Post({ post }) {
           <div>Loading…</div>
         ) : (
           <>
-            <article className="mb-32 w-100">
+            <article className="w-100">
               <PostHeader
                 title={post.title}
               />
@@ -34,7 +35,7 @@ export default function Post({ post }) {
   )
 }
 
-export async function getStaticProps({ params }) {
+export async function getStaticProps({ params, locale }) {
   const post = getPostBySlug(params.slug, [
     'title',
     'date',
@@ -52,6 +53,7 @@ export async function getStaticProps({ params }) {
         ...post,
         content,
       },
+      ...await serverSideTranslations(locale, ['footer', 'header']),
     },
   }
 }
