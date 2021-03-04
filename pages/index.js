@@ -13,12 +13,12 @@ const Homepage = () => {
   return (
     <>
       <main className="home-bg">
-        <Header locale={router.locale}/>
+        <Header isHomePage locale={router.locale} title={t('home-title')}/>
         <div className="container text-center">
           <img src="/logo-vertical.svg" alt="Paulcamper Logo" className="logo" height={123} width={112}/>
           <h1>{t('home-h1')}</h1>
           <p className="sub-header">{t('home-text')}</p>
-          <a className="button home-button" href="https://eepurl.com/hrPX4X" target="_blank" rel="nofollow">{t('home-link-text')}</a>
+          <a className="button home-button" href={t('home-link-href')} target="_blank" rel="nofollow">{t('home-link-text')}</a>
         </div>
       </main>
       <Footer isHomePage/>

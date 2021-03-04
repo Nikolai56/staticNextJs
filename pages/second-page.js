@@ -14,13 +14,7 @@ const SecondPage = () => {
     <>
       <main>
         <Header title={t('h1')} />
-        <Link href='/'>
-          <button
-            type='button'
-          >
-            {t('back-to-home')}
-          </button>
-        </Link>
+        Hello there!
       </main>
       <Footer />
     </>
