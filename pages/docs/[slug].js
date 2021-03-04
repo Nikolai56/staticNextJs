@@ -5,10 +5,9 @@ import { Header } from '../../components/Header'
 import PostHeader from '../../components/post-header'
 import { Footer } from '../../components/Footer'
 import { getPostBySlug, getAllPosts } from '../../lib/api'
-import Head from 'next/head'
 import markdownToHtml from '../../lib/markdownToHtml'
 
-export default function Post({ post, morePosts, preview }) {
+export default function Post({ post, preview }) {
   const router = useRouter()
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
