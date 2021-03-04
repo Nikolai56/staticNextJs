@@ -7,7 +7,7 @@ import { Footer } from '../../../components/Footer'
 import { getPostBySlug, getAllPosts } from '../../../lib/api'
 import markdownToHtml from '../../../lib/markdownToHtml'
 
-export default function Post({ post, preview }) {
+export default function Post({ post }) {
   const router = useRouter()
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
@@ -15,7 +15,6 @@ export default function Post({ post, preview }) {
   return (
     <>
       <main>
-        {preview}
         <Header title={`Paulcamper | ${post.title}`} />
         {router.isFallback ? (
           <div>Loading…</div>
