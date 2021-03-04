@@ -14,10 +14,10 @@ module.exports = {
         domain: 'paulcamper.co.uk',
         defaultLocale: 'en',
       },
-      {
-        domain: 'paulcamper.fr',
-        defaultLocale: 'fr',
-      },
+      // {
+      //   domain: 'paulcamper.fr',
+      //   defaultLocale: 'fr',
+      // },
       {
         domain: 'staticnextjs.herokuapp.com',
         defaultLocale: 'fr',
