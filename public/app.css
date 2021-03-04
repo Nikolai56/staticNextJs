@@ -18,7 +18,8 @@ html {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-weight: bold;
 }
 
@@ -27,11 +28,22 @@ h1 {
   line-height: 6.4rem;
 }
 
+h2 {
+  font-size: 28px;
+  line-height: 32px;
+  margin: 20px 0 15px;
+}
+
+h3 {
+  margin: 20px 0 15px;
+}
+
 .page-header {
   background-color: #fff;
   -webkit-box-shadow: 0 1px 5px rgb(0 0 0 / 10%);
   box-shadow: 0 1px 5px rgb(0 0 0 / 10%);
   padding: 10px 30px;
+  position: relative;
   width: 100%;
 }
 

@@ -18,8 +18,8 @@ export const Footer = ({ isHomePage }) => {
             <Link href="/second-page">
               {t('to-second-page')}
             </Link>
-            <Link href="/second-page">
-              {t('to-second-page')}
+            <Link href="/docs/legal-notice">
+              {t('to-legal-notice')}
             </Link>
           </div>
         </div>
