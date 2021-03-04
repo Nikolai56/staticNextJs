@@ -21,7 +21,7 @@ const Homepage = () => {
           <a className="button home-button" href={t('home-link-href')} target="_blank" rel="nofollow">{t('home-link-text')}</a>
         </div>
       </main>
-      <Footer isHomePage/>
+      <Footer isHomePage locale={router.locale}/>
     </>
   )
 }

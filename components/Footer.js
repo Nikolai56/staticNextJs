@@ -2,9 +2,10 @@ import { useTranslation } from 'next-i18next'
 import styles from '../styles/Footer.module.scss'
 import Link from 'next/link'
 
-export const Footer = ({ isHomePage }) => {
+export const Footer = ({ isHomePage, locale }) => {
 
   const { t } = useTranslation('footer')
+  const linkPath = locale === 'fr' ? '/en' : ''
 
   return (
     <footer className={styles.footer}>
@@ -15,10 +16,10 @@ export const Footer = ({ isHomePage }) => {
             Made with ❤ © PaulCamper GmbH
           </div>
           <div className="col-md-6 order-md-0">
-            <Link href="/docs/privacy-policy">
+            <Link href={`${linkPath}/docs/privacy-policy`}>
               {t('to-privacy-policy')}
             </Link>
-            <Link href="/docs/legal-notice">
+            <Link href={`${linkPath}/docs/legal-notice`}>
               {t('to-legal-notice')}
             </Link>
           </div>

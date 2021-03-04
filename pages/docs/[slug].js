@@ -16,7 +16,7 @@ export default function Post({ post }) {
   return (
     <>
       <main>
-        <Header title={`Paulcamper | ${post.title}`} />
+        <Header locale={router.locale} title={`Paulcamper | ${post.title}`}/>
         {router.isFallback ? (
           <div>Loading…</div>
         ) : (
@@ -30,7 +30,7 @@ export default function Post({ post }) {
           </>
         )}
       </main>
-      <Footer />
+      <Footer locale={router.locale} />
     </>
   )
 }
